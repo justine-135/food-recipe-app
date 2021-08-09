@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Heebo", sans-serif;
+}
+
+button {
+	font-family: "Heebo", sans-serif;
+}
+
+.navbar {
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	box-shadow: 1px 1px 5px gray;
+}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	width: 80%;
+	justify-content: space-between;
+	margin: auto;
+}
+.form {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.textbox {
+	border-radius: 5px 0px 0px 5px;
+	border: 1px solid gray;
+	height: 20px;
+	width: 100px;
+	border-right: none;
+}
+
+.textbox:focus {
+	outline: none;
+	font-size: 1.2rem;
+}
+
+.search {
+	height: 20px;
+	border-radius: 0px 5px 5px 0px;
+	padding: 0.5rem 0.5rem;
+	border: 1px solid gray;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	border-left: none;
+	cursor: pointer;
+}
+
+.search svg {
+	height: 10px;
+	width: 10px;
+}
+
+.search svg path {
+	fill: gray;
+}
+
+.food-wrap {
+	margin-top: 10px;
+	display: flex;
+	height: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 1rem 1rem;
+}
+
+.card {
+	height: auto;
+	width: 200px;
+	background-color: transparent;
+	margin-bottom: 10px;
+	padding: 1rem 1rem;
+	box-shadow: 1px 1px 5px gray;
+	/* overflow: hidden; */
+	position: relative;
+}
+
+.card-food {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-top {
+	height: 200px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.card-bottom {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.card-bottom h6 {
+	padding: 0.5rem 0.5rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+}
+
+.card-bottom a {
+	padding: 0rem 5.5rem;
+	background-color: rgb(66, 255, 66);
+	border: none;
+	color: white;
+	cursor: pointer;
+	margin-top: auto;
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+
+.ingredients {
+	padding: 0.5rem 0.5rem;
+	list-style: none;
+	line-height: 2.5rem;
+	font-size: 1.4rem;
+	color: rgb(22, 22, 22);
+}
+
+.ingredients li {
+	background-color: rgba(233, 233, 233, 0.459);
+	border-radius: 5px;
+	margin: 0.5rem 0rem;
+}
+
+.logo {
+	font-family: "Lobster", cursive;
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+	.logo {
+		font-size: 1.4rem;
+	}
+	.ingredients {
+		font-size: 1.2rem;
+	}
+	.card-bottom h6 {
+		font-size: 1.2rem;
+	}
+	.card-bottom a {
+		font-size: 1.2rem;
+	}
+	.textbox {
+		width: 60px;
+	}
+	.food-wrap {
+		align-items: center;
+	}
+}
